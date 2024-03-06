@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title id="title">Bootrstrap Navigation</title>
+    <!-- assets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Bootstrao 4.4.1 CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <!-- Font Awesome 5.12.1-->
+    <link rel="stylesheet" href="plugins/fontawesome-free-5.12.1-web/css/all.min.css">
+
+    <!-- jQuery -->
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap 4.4.1 JS -->
+    <script src="plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Translate JS -->
+    <script src="plugins/translate.min.js"></script> 
+    <script src="assets/js/app.js"></script>
+
+  </head>
+<body style="background-color:rgb(216, 216, 216);">
+<!-- navbarNav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light" >
+        <a class="navbar-brand" href="index.html">    
+          <img src="assets/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Los Porteños
+        </a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navegacion" 
+                aria-controls="navegacion" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navegacion">   
+          <ul class="navbar-nav">
+            <!-- BTN DE CONOCEMOS -->
+           
+            <li class="nav-item">
+              <a class="nav-link" 
+                href="conocenos.html" id="acerca"></a>
+            </li>
+              <!-- BTN DE MENU -->
+              <li class="nav-item">
+                <a class="nav-link" 
+                  href="menu.html" id="menu"><i class="fas fa-bars " ></i></a>
+              </li>
+            
+              <!-- BTN DE CONTACTANOS -->
+             <li class="nav-item">
+              <a class="nav-link" 
+                href="contactanos.html" id="contactanos"><i class="far fa-address-card"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <!-- TRADUCTOR PLUGINS EN DESARROLLO (Método Nuevo) -->
+
+      <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-sm btn-primary" id="btnEs">ES</button>
+                <button class="btn btn-sm btn-primary" id="btnEn">EN</button>
+      
+            </div>
+        </div>
+        </div>
+    
+      <!-- CONTAINER -->
+      <div class="container">
+        <!-- Carousel -->
+        <div class="carousel slide mt-3" id="mainCarousel" data-ride="carousel" data-touch="true">
+          <div class="carousel-inner">
+              <!-- Carousel Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mainCarousel" data-slide-to="1"></li>
+                <li data-target="#mainCarousel" data-slide-to="2"></li>
+                <li data-target="#mainCarousel" data-slide-to="3"></li>
+            </ol>
+              <!-- Carousel Items -->
+              <div class="carousel-item active">
+                  <img src="assets/img/ComidaMariscosNo1.jpg" alt="" class="w-100 d-block">
+                  <!-- Item caption -->
+                  <div class="carousel-caption">
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="assets/img/ComidaMariscosNo2.jpg" alt="" class="w-100 d-block">
+                  <!-- Item caption -->
+                  <div class="carousel-caption">
+
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="assets/img/ComidaMariscosNo3.jpg" alt="" class="w-100 d-block">
+                  <!-- Item caption -->
+                  <div class="carousel-caption">
+                      
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="assets/img/ComidaMariscosNo4.jpg" alt="" class="w-100 d-block">
+                  <!-- Item caption -->
+                  <div class="carousel-caption">
+          
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Carousel controls -->
+          <a href="#mainCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a href="#mainCarousel" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+          <h3><p class="text-center mt-3" id="visitanos"></p></h3>  
+
+          <h5><p id="notRec"></p></h2>
+
+           <!-- NOTICIA NO. 1 -->
+           
+            <div class="card-columns">
+              <div class="card">
+                <img src="../trabajo_proyecto/assets/img/marisqueria.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" id="notTitle1"></h5>
+                  <p class="card-text" id="notText1"></p>
+                </div>
+              </div>
+
+              <!-- FRASE NO.1 -->
+
+              <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                  <p id="frasNo1"></p>
+                  <footer class="blockquote-footer">
+                    <small class="text-muted">
+                      <cite title="Source Title" id="frasAutNo1"></cite>
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+              
+            <!-- NOTICIA NO.2 -->
+              
+              <div class="card">
+                <img src="../trabajo_proyecto/assets/img/gel.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" id="notTitle2"></h5>
+                  <p class="card-text" id="notText2"></p>
+                  <p class="card-text"><small class="text-muted" id="notTime2"></small></p>
+                </div>
+              </div>
+
+            <!-- FRASE NO.2 -->
+
+              <div class="card bg-primary text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                  <p id="frasNo2"></p>
+                  <footer class="blockquote-footer text-white">
+                    <small>
+                      <cite title="Source Title" id="frasAutNo2"></cite>
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+
+            <!-- NOTICIA NO.3 -->
+
+              <div class="card text-center">
+                <div class="card-body">
+                  <h5 class="card-title" id="notTitle3"></h5>
+                  <p class="card-text" id="notText3"></p>
+                  <p class="card-text"><small class="text-muted" id="notTime3"></small></p>
+                </div>
+              </div>
+
+            <!-- FRASE NO.3 -->
+
+              <div class="card">
+                <img src="../trabajo_proyecto/assets/img/Lugar.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card p-3 text-right">
+                <blockquote class="blockquote mb-0">
+                  <p id="frasNo3"></p>
+                  <footer class="blockquote-footer">
+                    <small class="text-muted">
+                      <cite title="Source Title" id="frasAutNo3"></cite>
+                    </small>
+                  </footer>
+                </blockquote>
+              </div>
+
+              <!-- NOTICIA NO.4 -->
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title" id="notTitle4"></h5>
+                  <p class="card-text" id="notText4"></p>
+                  <p class="card-text"><small class="text-muted" id="notTime4"></small></p>
+                </div>
+              </div>
+            </div>
+      </div>
+
+
+       <!-- TRADUCCIONES DEL SISTEMA -->
+
+       <script>
+        function cambiarIdioma(idioma) {
+            //Se configura idioma
+            translate.setLocale(idioma);
+        
+            //Se asigan textos
+            $("#title").html(
+                translate('pages.home.title')
+            );
+        
+            $("#welcome").html(
+                translate('pages.home.welcome')
+            );
+
+            // NavBar
+
+            $("#acerca").html(
+                translate('pages.home.acerca')
+            );
+
+            $("#menu").html(
+                translate('pages.home.menu')
+            );
+
+            $("#contactanos").html(
+                translate('pages.home.contactanos')
+            );
+
+            $("#visitanos").html(
+                translate('pages.home.visitanos')
+            );
+
+          // SET DE NOTOCIAS
+
+            $("#notRec").html(
+                translate('pages.home.notRec')
+            );
+
+          // NOTICIA NO.1
+
+            $("#notTitle1").html(
+                translate('pages.home.notTitle1')
+            );
+
+            $("#notText1").html(
+                translate('pages.home.notText1')
+            );
+
+            // FRASE NO.1
+
+            $("#frasNo1").html(
+                translate('pages.home.frasNo1')
+            );
+
+            $("#frasAutNo1").html(
+                translate('pages.home.frasAutNo1')
+            );
+
+            // NOTICIA NO.2
+
+            $("#notTitle2").html(
+                translate('pages.home.notTitle2')
+            );
+
+            $("#notText2").html(
+                translate('pages.home.notText2')
+            );
+
+            $("#notTime2").html(
+                translate('pages.home.notTime2')
+            );
+
+            // FRASE NO.2
+
+            $("#frasNo2").html(
+                translate('pages.home.frasNo2')
+            );
+
+            $("#frasAutNo2").html(
+                translate('pages.home.frasAutNo2')
+            );
+
+           // NOTICIA NO.3
+
+           $("#notTitle3").html(
+                translate('pages.home.notTitle3')
+            );
+
+            $("#notText3").html(
+                translate('pages.home.notText3')
+            );
+
+            $("#notTime3").html(
+                translate('pages.home.notTime3')
+            ); 
+
+            // FRASE NO.3
+
+            $("#frasNo3").html(
+                translate('pages.home.frasNo3')
+            );
+
+            $("#frasAutNo3").html(
+                translate('pages.home.frasAutNo3')
+            );
+
+            // NOTICIA NO.4
+
+           $("#notTitle4").html(
+                translate('pages.home.notTitle4')
+            );
+
+            $("#notText4").html(
+                translate('pages.home.notText4')
+            );
+
+            $("#notTime4").html(
+                translate('pages.home.notTime4')
+            ); 
+
+        }
+        
+        //Idioma Predeterminado
+        cambiarIdioma('es');
+        
+        //Selección de Idiomas
+        $("#btnEs").click(function () {
+            cambiarIdioma('es');
+        });
+        
+         $("#btnEn").click(function () {
+            cambiarIdioma('en');
+        });
+        </script>
+
+ 
+</body>
+</html>

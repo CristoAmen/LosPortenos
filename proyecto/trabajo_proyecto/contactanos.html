@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title id="title">Bootrstrap Navigation</title>
+    <!-- assets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Bootstrao 4.4.1 CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <!-- Font Awesome 5.12.1-->
+    <link rel="stylesheet" href="plugins/fontawesome-free-5.12.1-web/css/all.min.css">
+
+    <!-- jQuery -->
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap 4.4.1 JS -->
+    <script src="plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Translate JS -->
+    <script src="plugins/translate.min.js"></script> 
+    <script src="assets/js/app.js"></script>
+
+  </head>
+
+<body style="background-color:rgb(216, 216, 216);">
+<!-- navbarNav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light" >
+        <a class="navbar-brand" href="index.html">    
+          <img src="assets/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+          Los Porteños
+        </a>
+        <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navegacion" 
+                aria-controls="navegacion" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navegacion">   
+          <ul class="navbar-nav">
+            <!-- BTN DE CONOCEMOS -->
+           
+            <li class="nav-item">
+              <a class="nav-link" 
+                href="conocenos.html" id="acerca"></a>
+            </li>
+              <!-- BTN DE MENU -->
+              <li class="nav-item">
+                <a class="nav-link" 
+                  href="menu.html" id="menu"><i class="fas fa-bars " ></i></a>
+              </li>
+            
+              <!-- BTN DE CONTACTANOS -->
+             <li class="nav-item">
+              <a class="nav-link" 
+                href="contactanos.html" id="contactanos"><i class="far fa-address-card"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <!-- TRADUCTOR PLUGINS EN DESARROLLO (Método Nuevo) -->
+
+      <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-sm btn-primary" id="btnEs">ES</button>
+                <button class="btn btn-sm btn-primary" id="btnEn">EN</button>
+      
+            </div>
+        </div>
+        </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- Cards del equipo -->
+            <!-- Joan Alexis -->
+            <div class="card-deck mt-3">
+              <div class="card" style="max-width: 18rem;">
+                <img src="assets/img/joan.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title" id="alumno">
+                    Alumno
+                  </h5>
+                  <p class="card-text">
+                    <b id="name">Nombre: </b> Burgara Castañeda Joan Alexis <br>
+                    <b id="matri">Matrícula: </b> 18325050510302 <br>
+                    <b id="group">Grupo: </b> 4AM <br>
+                    <b id="especialidad">Especialidad: </b> Programación
+                  </p>
+                  <a href="#" class="btn btn-primary" id="contactar">Contactar</a>
+                </div>
+              </div>
+    
+              <!-- Alondra -->
+              <div class="card" style="max-width: 18rem;">
+                <img src="assets/img/alondra.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title" id="alumno1">
+                    Alumno
+                  </h5>
+                  <p class="card-text">
+                    <b id="name1">Nombre: </b> Camacho Álvarez Alondra Guadalupe <br>
+                    <b id="matri1">Matrícula: </b> 18325050510070 <br>
+                    <b id="group1">Grupo: </b> 4AM <br>
+                    <b id="especialidad1">Especialidad: </b> Programación
+                  </p>
+                  <a href="#" class="btn btn-primary" id="contactar1">Contactar</a>
+                </div>
+              </div>
+    
+              <!-- Cristofher -->
+              <div class="card" style="max-width: 18rem;">
+                <img src="assets/img/DelgadoElenes.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title" id="alumno2">
+                    Alumno
+                  </h5>
+                  <p class="card-text">
+                    <b id="name2">Nombre: </b> Delgado Elenes Cristofher <br>
+                    <b id="matri2">Matrícula: </b> 18325050510174 <br>
+                    <b id="group2">Grupo: </b> 4AM <br>
+                    <b id="especialidad2">Especialidad: </b> Programación
+                  </p>
+                  <a href="#" class="btn btn-primary" id="contactar2">Contactar</a>
+                </div>
+              </div>
+        </div>
+      </div>
+
+        
+          
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+          
+          <div class="card-deck mt-3">
+              <!-- Cristina-->
+              <div class="card" style="max-width: 18rem;">
+                <img src="assets/img/Cristina.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title" id="alumno3">
+                    Alumno
+                  </h5>
+                  <p class="card-text">
+                    <b id="name3">Nombre:</b> Loaiza Lizárraga Cristina <br>
+                    <b id="matri3">Matrícula: </b> 18325050510302 <br>
+                    <b id="group3">Grupo: </b> 4AM <br>
+                    <b id="especialidad3">Especialidad: </b> Programación
+                  </p>
+                  <a href="#" class="btn btn-primary" id="contactar3">Contactar</a>
+                </div>
+              </div>
+    
+              <!-- Oscar -->
+              <div class="card" style="max-width: 18rem;" >
+                <img src="assets/img/SainzChavez.png" alt="..." class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title" id="alumno4">
+                    Alumno
+                  </h5>
+                  <p class="card-text">
+                    <b id="name4">Nombre: </b> Sainz Chávez Oscar Alonso <br>
+                    <b id="matri4">Matrícula: </b> 18325050510108 <br>
+                    <b id="group4">Grupo: </b> 4AM <br>
+                    <b id="especialidad4">Especialidad: </b> Programación
+                  </p>
+                  <a href="#" class="btn btn-primary" id="contactar4">Contactar</a>
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+       <!-- TRADUCCIONES DEL SISTEMA -->
+
+       <script>
+        function cambiarIdioma(idioma) {
+            //Se configura idioma
+            translate.setLocale(idioma);
+        
+            //Se asigan textos
+            $("#title").html(
+                translate('pages.home.title')
+            );
+        
+            $("#welcome").html(
+                translate('pages.home.welcome')
+            );
+
+            // NavBar
+
+            $("#acerca").html(
+                translate('pages.home.acerca')
+            );
+
+            $("#menu").html(
+                translate('pages.home.menu')
+            );
+
+            $("#contactanos").html(
+                translate('pages.home.contactanos')
+            );
+
+            $("#visitanos").html(
+                translate('pages.home.visitanos')
+            );
+
+          //CONTACTANOS
+
+          //JOAN ALEXIS
+            $("#alumno").html(
+                translate('pages.home.alumno')
+            );
+
+            $("#name").html(
+                translate('pages.home.name')
+            );
+
+            $("#matri").html(
+                translate('pages.home.matri')
+            );
+
+            $("#group").html(
+                translate('pages.home.group')
+            );
+
+            $("#especialidad").html(
+                translate('pages.home.especialidad')
+            );
+
+            $("#contactar").html(
+                translate('pages.home.contactar')
+            );
+          //ALONDRA
+            $("#alumno1").html(
+                translate('pages.home.alumno1')
+            );
+
+            $("#name1").html(
+                translate('pages.home.name1')
+            );
+
+            $("#matri1").html(
+                translate('pages.home.matri1')
+            );
+
+            $("#group1").html(
+                translate('pages.home.group4')
+            );
+
+            $("#especialidad1").html(
+                translate('pages.home.especialidad1')
+            );
+
+            $("#contactar1").html(
+                translate('pages.home.contactar1')
+            );
+          //CRISTOFHER
+            $("#alumno2").html(
+                translate('pages.home.alumno2')
+            );
+
+            $("#name2").html(
+                translate('pages.home.name2')
+            );
+
+            $("#matri2").html(
+                translate('pages.home.matri2')
+            );
+
+            $("#group2").html(
+                translate('pages.home.group2')
+            );
+
+            $("#especialidad2").html(
+                translate('pages.home.especialidad2')
+            );
+
+            $("#contactar2").html(
+                translate('pages.home.contactar2')
+            );
+
+          //CRISTINA
+            $("#alumno3").html(
+                translate('pages.home.alumno3')
+            );
+
+            $("#name3").html(
+                translate('pages.home.name3')
+            );
+
+            $("#matri3").html(
+                translate('pages.home.matri3')
+            );
+
+            $("#group3").html(
+                translate('pages.home.group3')
+            );
+
+            $("#especialidad3").html(
+                translate('pages.home.especialidad3')
+            );
+
+            $("#contactar3").html(
+                translate('pages.home.contactar3')
+            );
+          //OSCAR
+            $("#alumno4").html(
+                translate('pages.home.alumno4')
+            );
+
+            $("#name4").html(
+                translate('pages.home.name4')
+            );
+
+            $("#matri4").html(
+                translate('pages.home.matri3')
+            );  
+
+            $("#group4").html(
+                translate('pages.home.group4')
+            );
+
+            $("#especialidad4").html(
+                translate('pages.home.especialidad3')
+            );
+
+            $("#contactar4").html(
+                translate('pages.home.contactar4')
+            );
+
+            
+
+
+        }
+        
+        //Idioma Predeterminado
+        cambiarIdioma('es');
+        
+        //Selección de Idiomas
+        $("#btnEs").click(function () {
+            cambiarIdioma('es');
+        });
+        
+         $("#btnEn").click(function () {
+            cambiarIdioma('en');
+        });
+        </script>
+         
+
+
+      
+    
+    
+          
+</body>
+</html> 

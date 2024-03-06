@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title id="title">Bootrstrap Navigation</title>
+    <!-- assets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Bootstrao 4.4.1 CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <!-- Font Awesome 5.12.1-->
+    <link rel="stylesheet" href="plugins/fontawesome-free-5.12.1-web/css/all.min.css">
+
+    <!-- jQuery -->
+    <script src="plugins/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap 4.4.1 JS -->
+    <script src="plugins/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Translate JS -->
+    <script src="plugins/translate.min.js"></script> 
+    <script src="assets/js/app.js"></script>
+
+  </head>
+<body style="background-color:rgb(216, 216, 216);">
+<!-- navbarNav -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" >
+  <a class="navbar-brand" href="index.html">    
+    <img src="assets/img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Los Porteños
+  </a>
+  <button class="navbar-toggler" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navegacion" 
+          aria-controls="navegacion" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navegacion">   
+    <ul class="navbar-nav">
+      <!-- BTN DE CONOCEMOS -->
+     
+      <li class="nav-item">
+        <a class="nav-link" 
+          href="conocenos.html" id="acerca"></a>
+      </li>
+        <!-- BTN DE MENU -->
+        <li class="nav-item">
+          <a class="nav-link" 
+            href="menu.html" id="menu"><i class="fas fa-bars " ></i></a>
+        </li>
+      
+        <!-- BTN DE CONTACTANOS -->
+       <li class="nav-item">
+        <a class="nav-link" 
+          href="contactanos.html" id="contactanos"><i class="far fa-address-card"></i></a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- TRADUCTOR PLUGINS EN DESARROLLO (Método Nuevo) -->
+
+  <div class="container mt-3">
+    <div class="row">
+        <div class="col">
+
+            <button class="btn btn-sm btn-primary" id="btnEs">ES</button>
+            <button class="btn btn-sm btn-primary" id="btnEn">EN</button>
+  
+        </div>
+    </div>
+    </div>
+
+  <div class="container">
+    <h3><p class="text-center mt-3" id="histTit"></p></h3>  
+    <h5 id="hist"><p></p></h5>
+
+    <h3><p class="text-center mt-3" id="vision"></p></h3>  
+    <ol>
+      <li><h5 id="vision1"></h5></li>
+      <li><h5 id="vision2"></h5></li>
+      <li><h5 id="vision3"></h5></li>
+    </ol>
+
+    <h3><p class="text-center mt-3" id="misionTit"></p></h3> 
+    <h5 id="misionText"><p></p></h5> 
+
+      <!-- TRADUCCIONES DEL SISTEMA -->
+
+      <script>
+        function cambiarIdioma(idioma) {
+            //Se configura idioma
+            translate.setLocale(idioma);
+        
+            //Se asigan textos
+            $("#title").html(
+                translate('pages.home.title')
+            );
+        
+            $("#welcome").html(
+                translate('pages.home.welcome')
+            );
+
+            // NavBar
+
+            $("#acerca").html(
+                translate('pages.home.acerca')
+            );
+
+            $("#menu").html(
+                translate('pages.home.menu')
+            );
+
+            $("#contactanos").html(
+                translate('pages.home.contactanos')
+            );
+
+            $("#visitanos").html(
+                translate('pages.home.visitanos')
+            );
+
+          //ACERCA DE
+
+          // HISTORIA
+
+          $("#histTit").html(
+                translate('pages.home.histTit')
+            );
+
+          $("#hist").html(
+                translate('pages.home.hist')
+            );
+
+          // VISIÓN 
+
+          $("#vision").html(
+                translate('pages.home.vision')
+            );
+
+            $("#vision1").html(
+                translate('pages.home.vision1')
+            );
+
+            $("#vision2").html(
+                translate('pages.home.vision2')
+            );
+
+            $("#vision3").html(
+                translate('pages.home.vision3')
+            );
+           
+          // MISIÓN
+
+            $("#misionTit").html(
+                  translate('pages.home.misionTit')
+              );
+
+            $("#misionText").html(
+                translate('pages.home.misionText')
+              );  
+
+        }
+        
+        //Idioma Predeterminado
+        cambiarIdioma('es');
+        
+        //Selección de Idiomas
+        $("#btnEs").click(function () {
+            cambiarIdioma('es');
+        });
+        
+         $("#btnEn").click(function () {
+            cambiarIdioma('en');
+        });
+        </script>
+    
+</div>  
+
+  
+                  
+        
+
+
+
+
+
+        
+      
+       
+
+
+        
+      
+      
+      
+      
+
+
+
+
+
+         
+</body>
+</html>
